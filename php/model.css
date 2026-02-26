@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to left, rgba(86, 86, 218, 0.652), rgb(133, 133, 241));
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    text-align: justify;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    background-color: #fff;
+    min-width: 500px;
+    max-width: 900px;
+    min-height: 500px;
+    max-height: 900px;
+    margin: auto;
+}
