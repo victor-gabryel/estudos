@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX009</title>
+</head>
+<body>
+
+    <h1>Verificando se é Brasileiro</h1>
+
+    <h2>Diga de que país voçê é:</h2>
+
+    <ul>
+        <li>Evite começar com letras minúsculas</li>
+        <li>Evite abreviaturas</li>
+    </ul>
+
+    <input type="text" name="txtemail" id="txtexto">
+
+    <input type="button" value="Verificar" onclick="verificar()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function verificar() {
+
+            var te = window.document.getElementById('txtexto')
+
+            var resp = window.document.querySelector('div#res')
+
+            if (te.value != 'Brasil') {
+                resp.innerHTML += (`<p>Essa pessoa é estrangeira</p>`)
+            } else {
+                resp.innerHTML += (`<p>Essa pessoa é Brasileira</p>`)
+            }
+
+        }
+        
+    </script>
+
+</body>
+</html>
